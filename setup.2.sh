@@ -22,7 +22,13 @@ git config --global credential.helper 'cache --timeout=14400'
 echo "Installing Insync client (with repo):"
 wget -qO - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key | sudo apt-key add -
 [ -f /etc/apt/sources.list.d/insync.list ] || echo "deb http://apt.insynchq.com/debian jessie non-free contrib" | sudo dd of=/etc/apt/sources.list.d/insync.list
-sudo aptitude update && sudo aptitude install insync
+sudo aptitude update
+sudo aptitude install insync
+
+echo "Installing TresorIT client:"
+curl https://installerstorage.blob.core.windows.net/public/install/tresorit_installer.run -o /tmp/tresorit.run
+chmod +x /tmp/tresorit.run && /tmp/tresorit.run
 
 echo "Installing requirements for PIA"
 sudo aptitude install openvpn network-manager-openvpn network-manager-openvpn-gnome uuid-runtime
+
