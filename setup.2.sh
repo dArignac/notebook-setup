@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Install basic packages:"
-sudo aptitude install vim curl keepass2 encfs git htop multitail p7zip-rar
+sudo aptitude install vim curl keepass2 encfs git htop multitail p7zip-rar clamav
 sudo update-alternatives --config editor
 
 echo "Installing gnome-encfs-manager (with repo):"
@@ -33,7 +33,8 @@ echo "Installing Thunderbird/Icedove:"
 sudo aptitude install gnupg2 enigmail icedove icedove-l10n-de
 echo -e "\e[1;33mInstall ImportExportTools from Website https://addons.mozilla.org/de/thunderbird/addon/importexporttools/\e[0m"
 
-
 echo "Installing requirements for PIA"
 sudo aptitude install openvpn network-manager-openvpn network-manager-openvpn-gnome uuid-runtime
 
+echo "Installating Filezilla:"
+sudo aptitude install filezilla
