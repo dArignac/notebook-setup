@@ -38,3 +38,7 @@ sudo aptitude install openvpn network-manager-openvpn network-manager-openvpn-gn
 
 echo "Installating Filezilla:"
 sudo aptitude install filezilla
+
+echo "Installing docker (have to logout and login again to use without sudo afterwards):"
+curl -fsSL https://get.docker.com/ | sh
+sudo usermod -aG docker alex
