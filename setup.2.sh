@@ -3,6 +3,12 @@ echo "Install basic packages:"
 sudo aptitude install vim curl keepass2 encfs git htop multitail p7zip-rar clamav
 sudo update-alternatives --config editor
 
+# source: https://wiki.debian.org/BluetoothUser/a2dp
+echo "Installing bluetooth:"
+sudo aptitude install pulseaudio pulseaudio-module-bluetooth pavucontrol bluez-firmware
+sudo service bluetooth restart
+sudo killall pulseaudio
+
 echo "Installing gnome-encfs-manager (with repo):"
 [ -f /etc/apt/sources.list.d/gnome-encfs-manager.list ] || echo "deb http://download.opensuse.org/repositories/home:/moritzmolch:/gencfsm/Debian_8.0/ /" | sudo dd of=/etc/apt/sources.list.d/gnome-encfs-manager.list
 sudo aptitude update
