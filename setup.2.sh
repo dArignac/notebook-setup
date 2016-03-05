@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Install basic packages:"
-sudo aptitude install vim curl keepass2 encfs git htop multitail p7zip-rar clamav
+sudo aptitude install vim curl keepass2 encfs git htop multitail p7zip-rar clamav vlc
 sudo update-alternatives --config editor
 
 # source: https://wiki.debian.org/BluetoothUser/a2dp
