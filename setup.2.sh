@@ -1,4 +1,6 @@
 #!/bin/bash
+DIRHERE=`pwd`
+
 echo "Install basic packages:"
 sudo aptitude install vim curl keepass2 encfs git htop multitail p7zip-rar clamav vlc poedit s3cmd libdvdread4
 sudo update-alternatives --config editor
@@ -69,9 +71,21 @@ nautilus --quit
 echo "Installing gnormalize:"
 sudo aptitude install mpg321 faac faad lame flac libcdaudio1 libcdaudio-dev libperl-dev musepack-tools cmake vorbis-tools cdparanoia
 curl -L -o /tmp/gnormalize.tar.gz /tmp/gnormalize.tar.gz http://prdownloads.sourceforge.net/gnormalize/gnormalize-0.63.tar.gz?download
-HERE=`pwd`
 cd /tmp
 tar xzf gnormalize.tar.gz
 cd gnormalize*
 sudo ./install
-cd ${HERE}
+cd ${DIRHERE}
+
+echo "Installing Python:"
+sudo aptitude install python3-dev python-dev libffi-dev libxml2-dev libxslt1-dev libpq-dev libsqlite3-dev
+curl https://bootstrap.pypa.io/get-pip.py | sudo python
+curl https://bootstrap.pypa.io/get-pip.py | sudo python3
+sudo python /usr/local/lib/python2.7/dist-packages/pip install virtualenv
+sudo python3 /usr/local/lib/python3.4/dist-packages/pip install virtualenv
+mkdir -p /tmp/python3.5
+curl -o /tmp/python3.5/python.tgz https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tgz
+tar xzf /tmp/python3.5/python.tgz -C /tmp/python3.5/
+cd /tmp/python3.5/Python-3.5.1/
+./configure && make && sudo make altinstall
+cd ${DIRHERE}
