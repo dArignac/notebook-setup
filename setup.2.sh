@@ -60,3 +60,8 @@ sudo aptitude install shutter
 mkdir -p ~/Bilder/Screenshots
 [ -d ~/.shutter/profiles ] || mkdir ~/.shutter/profiles
 cp .shutter/profiles/alex* ~/.shutter/profiles/
+
+echo "Installing Dropbox:"
+curl -L -o /tmp/dropbox.deb https://www.dropbox.com/download?dl=packages/debian/dropbox_2015.10.28_amd64.deb
+sudo dpkg -i /tmp/dropbox.deb
+nautilus --quit
