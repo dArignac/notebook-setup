@@ -49,3 +49,8 @@ sudo aptitude install filezilla
 echo "Installing docker (have to logout and login again to use without sudo afterwards):"
 curl -fsSL https://get.docker.com/ | sh
 sudo usermod -aG docker alex
+
+echo "Installing terminator:"
+sudo aptitude install terminator
+[ -d ~/.config/terminator ] || mkdir -p ~/.config/terminator
+cp .config/terminator/config ~/.config/terminator/config
