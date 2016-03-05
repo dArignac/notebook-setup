@@ -65,3 +65,13 @@ echo "Installing Dropbox:"
 curl -L -o /tmp/dropbox.deb https://www.dropbox.com/download?dl=packages/debian/dropbox_2015.10.28_amd64.deb
 sudo dpkg -i /tmp/dropbox.deb
 nautilus --quit
+
+echo "Installing gnormalize:"
+sudo aptitude install mpg321 faac faad lame flac libcdaudio1 libcdaudio-dev libperl-dev musepack-tools cmake vorbis-tools cdparanoia
+curl -L -o /tmp/gnormalize.tar.gz /tmp/gnormalize.tar.gz http://prdownloads.sourceforge.net/gnormalize/gnormalize-0.63.tar.gz?download
+HERE=`pwd`
+cd /tmp
+tar xzf gnormalize.tar.gz
+cd gnormalize*
+sudo ./install
+cd ${HERE}
