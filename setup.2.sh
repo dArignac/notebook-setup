@@ -54,3 +54,9 @@ echo "Installing terminator:"
 sudo aptitude install terminator
 [ -d ~/.config/terminator ] || mkdir -p ~/.config/terminator
 cp .config/terminator/config ~/.config/terminator/config
+
+echo "Installing Shutter:"
+sudo aptitude install shutter
+mkdir -p ~/Bilder/Screenshots
+[ -d ~/.shutter/profiles ] || mkdir ~/.shutter/profiles
+cp .shutter/profiles/alex* ~/.shutter/profiles/
