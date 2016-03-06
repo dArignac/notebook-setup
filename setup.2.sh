@@ -51,6 +51,9 @@ sudo aptitude install filezilla
 echo "Installing docker (have to logout and login again to use without sudo afterwards):"
 curl -fsSL https://get.docker.com/ | sh
 sudo usermod -aG docker alex
+sudo curl -L -o /usr/local/bin/docker-compose https://github.com/docker/compose/releases/download/1.6.2/docker-compose-`uname -s`-`uname -m`
+sudo chmod +x /usr/local/bin/docker-compose
+sudo curl -L -o /etc/bash_completion.d/docker-compose https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docker-compose
 
 echo "Installing terminator:"
 sudo aptitude install terminator
