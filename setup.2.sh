@@ -72,6 +72,7 @@ sudo dpkg -i /tmp/dropbox.deb
 nautilus --quit
 
 echo "Installing gnormalize:"
+# may need to install libavcodec-extra - but is conflicts with already installed packages
 sudo aptitude install mpg321 faac faad lame flac libcdaudio1 libcdaudio-dev libperl-dev musepack-tools cmake vorbis-tools cdparanoia
 curl -L -o /tmp/gnormalize.tar.gz /tmp/gnormalize.tar.gz http://prdownloads.sourceforge.net/gnormalize/gnormalize-0.63.tar.gz?download
 cd /tmp
