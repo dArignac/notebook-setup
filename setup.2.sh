@@ -82,7 +82,7 @@ sudo ./install
 cd ${DIRHERE}
 
 echo "Installing Python:"
-sudo aptitude install python3-dev python-dev libffi-dev libxml2-dev libxslt1-dev libpq-dev libsqlite3-dev
+sudo aptitude install python3-dev python-dev libffi-dev libxml2-dev libxslt1-dev libpq-dev libsqlite3-dev libjpeg libjpeg-devel
 curl https://bootstrap.pypa.io/get-pip.py | sudo python
 curl https://bootstrap.pypa.io/get-pip.py | sudo python3
 sudo python /usr/local/lib/python2.7/dist-packages/pip install virtualenv
