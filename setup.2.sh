@@ -98,7 +98,7 @@ curl https://bootstrap.pypa.io/get-pip.py | sudo python3
 sudo python /usr/local/lib/python2.7/dist-packages/pip install virtualenv
 sudo python3 /usr/local/lib/python3.4/dist-packages/pip install virtualenv
 mkdir -p /tmp/py
-curl -o /tmp/py/py35.tgz https://www.python.org/ftp/python/3.5.1/Python-3.5.2.tgz
+curl -o /tmp/py/py35.tgz https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tgz
 tar xzf /tmp/py/py35.tgz -C /tmp/py/
 cd /tmp/py/Python-3.5.1/
 ./configure && make && sudo make altinstall
