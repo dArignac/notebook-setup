@@ -100,7 +100,7 @@ sudo python3 /usr/local/lib/python3.4/dist-packages/pip install virtualenv
 mkdir -p /tmp/py
 curl -o /tmp/py/py35.tgz https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tgz
 tar xzf /tmp/py/py35.tgz -C /tmp/py/
-cd /tmp/py/Python-3.5.1/
+cd /tmp/py/Python-3.5.2/
 ./configure && make && sudo make altinstall
 curl -o /tmp/py/py33.tgz https://www.python.org/ftp/python/3.3.6/Python-3.3.6.tgz
 tar xzf /tmp/py/py33.tgz -C /tmp/py/
