@@ -57,7 +57,7 @@ sudo aptitude install virtualbox-5.0
 echo "Installing docker (have to logout and login again to use without sudo afterwards):"
 curl -fsSL https://get.docker.com/ | sh
 sudo usermod -aG docker alex
-sudo curl -L -o /usr/local/bin/docker-compose https://github.com/docker/compose/releases/download/1.6.2/docker-compose-`uname -s`-`uname -m`
+sudo curl -L -o /usr/local/bin/docker-compose https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m`
 sudo chmod +x /usr/local/bin/docker-compose
 sudo curl -L -o /etc/bash_completion.d/docker-compose https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docker-compose
 sudo curl -L -o /usr/local/bin/docker-machine https://github.com/docker/machine/releases/download/v0.6.0/docker-machine-`uname -s`-`uname -m`
@@ -98,7 +98,7 @@ curl https://bootstrap.pypa.io/get-pip.py | sudo python3
 sudo python /usr/local/lib/python2.7/dist-packages/pip install virtualenv
 sudo python3 /usr/local/lib/python3.4/dist-packages/pip install virtualenv
 mkdir -p /tmp/py
-curl -o /tmp/py/py35.tgz https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tgz
+curl -o /tmp/py/py35.tgz https://www.python.org/ftp/python/3.5.1/Python-3.5.2.tgz
 tar xzf /tmp/py/py35.tgz -C /tmp/py/
 cd /tmp/py/Python-3.5.1/
 ./configure && make && sudo make altinstall
