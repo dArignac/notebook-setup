@@ -57,7 +57,7 @@ sudo aptitude install virtualbox-5.0
 echo "Installing docker (have to logout and login again to use without sudo afterwards):"
 curl -fsSL https://get.docker.com/ | sh
 sudo usermod -aG docker alex
-sudo -E curl -L -o /usr/local/bin/docker-compose https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m`
+sudo -E curl -L -o /usr/local/bin/docker-compose https://github.com/docker/compose/releases/download/1.8.1/docker-compose-`uname -s`-`uname -m`
 sudo chmod +x /usr/local/bin/docker-compose
 sudo -E curl -L -o /etc/bash_completion.d/docker-compose https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docker-compose
 sudo -E curl -L -o /usr/local/bin/docker-machine https://github.com/docker/machine/releases/download/v0.6.0/docker-machine-`uname -s`-`uname -m`
