@@ -16,9 +16,12 @@ echo "Installing gnome-encfs-manager (with repo):"
 sudo aptitude update
 sudo aptitude install gnome-encfs-manager
 
-echo "Getting bash config:"
-curl -s https://raw.githubusercontent.com/darignac/fx/master/.bash_aliases > ~/.bash_aliases
-source ~/.bash_aliases
+echo "Setting up fish shell:"
+wget -qO - http://download.opensuse.org/repositories/shells:fish:release:2/Debian_8.0/Release.key | sudo apt-get add -
+[ -f /etc/apt/sources.list.d/fish.list ] || echo "deb http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_8.0/ /" | sudo dd of=/etc/apt/sources.list.d/fish.list
+sudo aptitude update
+sudo aptitude install fish
+curl -s https://raw.githubusercontent.com/darignac/fx/master/fish.config > ~/.config/fish/config.fish
 
 echo "Configuring git:"
 git config --global user.name "Alexander Herrmann"
