@@ -32,10 +32,6 @@ wget -qO - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key |
 sudo aptitude update
 sudo aptitude install insync
 
-echo "Installing TresorIT client:"
-curl https://installerstorage.blob.core.windows.net/public/install/tresorit_installer.run -o /tmp/tresorit.run
-chmod +x /tmp/tresorit.run && /tmp/tresorit.run
-
 echo "Installing Thunderbird/Icedove:"
 sudo aptitude install python-gpgme gnupg2 enigmail icedove icedove-l10n-de
 echo -e "\e[1;33mInstall ImportExportTools from Website https://addons.mozilla.org/de/thunderbird/addon/importexporttools/\e[0m"
