@@ -2,7 +2,7 @@
 DIRHERE=`pwd`
 
 echo "Install basic packages:"
-sudo aptitude install vim curl keepass2 encfs git htop multitail p7zip-rar clamav vlc poedit s3cmd libdvdread4 vobcopy libdvdcss2 imagemagick jpegoptim puddletag davfs2 asciidoctor
+sudo aptitude install vim curl keepass2 encfs git htop multitail p7zip-rar clamav vlc poedit s3cmd libdvdread4 vobcopy libdvdcss2 imagemagick jpegoptim puddletag davfs2
 sudo update-alternatives --config editor
 
 # davfs2 group
@@ -101,6 +101,11 @@ curl -o /tmp/py/py33.tgz https://www.python.org/ftp/python/3.3.6/Python-3.3.6.tg
 tar xzf /tmp/py/py33.tgz -C /tmp/py/
 cd /tmp/py/Python-3.3.6/
 ./configure && make && sudo make altinstall
+
+# asciidoctor
+sudo aptitude install ruby graphviz
+sudo gem install asciidoctor asciidoctor-diagram
+sudo pip3 install blockdiag
 
 echo "Setting up fish shell:"
 wget -qO - http://download.opensuse.org/repositories/shells:fish:release:2/Debian_8.0/Release.key | sudo apt-get add -
