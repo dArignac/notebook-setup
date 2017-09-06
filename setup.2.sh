@@ -93,7 +93,7 @@ cd ${DIRHERE}
 echo "Installing Python:"
 curl https://bootstrap.pypa.io/get-pip.py | sudo -E python3
 
-# asciidoctor
+echo "Installing asciidoctor"
 sudo aptitude install ruby graphviz
 sudo gem install asciidoctor asciidoctor-diagram
 sudo pip3 install blockdiag
@@ -107,5 +107,17 @@ mkdir -p ~/.config/fish
 curl -s https://raw.githubusercontent.com/darignac/fx/master/config.fish > ~/.config/fish/config.fish
 echo "Changing shell to fish:"
 chsh -s /usr/bin/fish
+
+echo "Installing rclone:"
+curl -L -o /tmp/rclone.zip https://downloads.rclone.org/rclone-v1.37-linux-amd64.zip
+cd /tmp
+unzip rclone.zip
+mv rclone-* $HOME/
+sudo cp $HOME/rclone-*/rclone /usr/bin/
+sudo chown root:root /usr/bin/rclone
+sudo chmod 755 /usr/bin/rclone
+sudo mkdir -p /usr/local/share/man/man1
+sudo cp $HOME/rclone-*/rclone.1 /usr/local/share/man/man1/
+sudo mandb
 
 cd ${DIRHERE}
