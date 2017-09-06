@@ -36,11 +36,6 @@ wget -qO - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key |
 sudo aptitude update
 sudo aptitude install insync
 
-echo "Installing Thunderbird/Icedove:"
-sudo aptitude install thunderbird thunderbird-l10n-de
-echo -e "\e[1;33mInstall ImportExportTools from Website https://addons.mozilla.org/de/thunderbird/addon/importexporttools/\e[0m"
-echo -e "\e[1;33mTo restore the profile, execute icdedove -ProfileManager, delete the default profile, create a new one and copy the profile files into the folder of the newly creattd profile\e[0m"
-
 echo "Installing requirements for PIA"
 sudo aptitude install openvpn network-manager-openvpn network-manager-openvpn-gnome uuid-runtime
 
