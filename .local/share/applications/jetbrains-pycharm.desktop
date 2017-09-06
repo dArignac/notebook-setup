@@ -2,8 +2,8 @@
 Version=1.0
 Type=Application
 Name=PyCharm
-Icon=/home/alex/pycharm-2016.3.2/bin/pycharm.png
-Exec="/home/alex/pycharm-2016.3.2/bin/pycharm.sh" %f
+Icon=/home/alex/pycharm-2017.2.2/bin/pycharm.png
+Exec="/home/alex/pycharm-2017.2.2/bin/pycharm.sh" %f
 Comment=Develop with pleasure!
 Categories=Development;IDE;
 Terminal=false
