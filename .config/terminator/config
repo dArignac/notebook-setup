@@ -1,27 +1,29 @@
 [global_config]
   enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
 [keybindings]
-[profiles]
-  [[default]]
-    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
-    background_image = None
-    foreground_color = "#e53c00"
-    scrollback_infinite = True
-    copy_on_selection = True
-    use_theme_colors = True
-  [[bigger]]
-    use_system_font = False
-    font = Monospace 14
-    foreground_color = "#e53c00"
-    scrollback_infinite = True
-    copy_on_selection = True
-    use_theme_colors = True
 [layouts]
   [[default]]
     [[[child1]]]
-      type = Terminal
       parent = window0
+      type = Terminal
     [[[window0]]]
-      type = Window
       parent = ""
+      type = Window
 [plugins]
+[profiles]
+  [[default]]
+    copy_on_selection = True
+    cursor_color = "#e53c00"
+    font = Monospace 9
+    foreground_color = "#e53c00"
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    scrollback_infinite = True
+    use_system_font = False
+    use_theme_colors = True
+  [[bigger]]
+    copy_on_selection = True
+    font = Monospace 14
+    foreground_color = "#e53c00"
+    scrollback_infinite = True
+    use_system_font = False
+    use_theme_colors = True
