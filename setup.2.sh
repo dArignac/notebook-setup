@@ -68,6 +68,12 @@ sudo aptitude install terminator
 [ -d ~/.config/terminator ] || mkdir -p ~/.config/terminator
 cp .config/terminator/config ~/.config/terminator/config
 
+echo "Installing Visual Studio Code"
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo dd of=/etc/apt/trusted.gpg.d/microsoft.gpg
+sudo aptitude update
+sudo aptitude install code
+
 echo "Installing Shutter:"
 sudo aptitude install shutter
 mkdir -p ~/Bilder/Screenshots
