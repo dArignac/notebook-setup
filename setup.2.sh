@@ -2,7 +2,7 @@
 DIRHERE=`pwd`
 
 echo "Install basic packages:"
-sudo aptitude install vim curl keepass2 encfs git htop multitail p7zip-rar clamav vlc poedit s3cmd libdvdread4 vobcopy libdvdcss2 imagemagick jpegoptim puddletag davfs2 gdebi digikam gsmartcontrol
+sudo aptitude install vim curl keepass2 encfs git htop multitail p7zip-rar clamav vlc poedit s3cmd libdvdread4 vobcopy libdvdcss2 imagemagick jpegoptim puddletag davfs2 gdebi digikam gsmartcontrol zsh
 sudo update-alternatives --config editor
 
 # davfs2 group
@@ -104,15 +104,19 @@ sudo aptitude install ruby graphviz
 sudo gem install asciidoctor asciidoctor-diagram
 sudo pip3 install blockdiag
 
-echo "Setting up fish shell:"
-wget -qO - http://download.opensuse.org/repositories/shells:fish:release:2/Debian_9.0/Release.key | sudo apt-key add -
-[ -f /etc/apt/sources.list.d/fish.list ] || echo "deb http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_9.0/ /" | sudo dd of=/etc/apt/sources.list.d/fish.list
-sudo aptitude update
-sudo aptitude install fish
-mkdir -p ~/.config/fish
-curl -s https://raw.githubusercontent.com/darignac/fx/master/config.fish > ~/.config/fish/config.fish
-echo "Changing shell to fish:"
-chsh -s /usr/bin/fish
+#echo "Setting up fish shell:"
+#wget -qO - http://download.opensuse.org/repositories/shells:fish:release:2/Debian_9.0/Release.key | sudo apt-key add -
+#[ -f /etc/apt/sources.list.d/fish.list ] || echo "deb http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_9.0/ /" | sudo dd of=/etc/apt/sources.list.d/fish.list
+#sudo aptitude update
+#sudo aptitude install fish
+#mkdir -p ~/.config/fish
+#curl -s https://raw.githubusercontent.com/darignac/fx/master/config.fish > ~/.config/fish/config.fish
+#echo "Changing shell to fish:"
+#chsh -s /usr/bin/fish
+
+echo "Setting up zsh shell:"
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "Installing rclone:"
 curl -L -o /tmp/rclone.zip https://downloads.rclone.org/rclone-v1.37-linux-amd64.zip
