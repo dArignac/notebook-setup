@@ -1,6 +1,22 @@
-#!/bin/sh
+#!/bin/bash
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null && pwd)"
 echo "Installing all packages:"
 
-# FIXME iterate a list of installers with confirmation after each
-# FIXME give the basic, never changing paths to the installers
-installer/puddletag.sh
+declare -a INSTALLER=(
+"puddletag"
+)
+
+for i in ${INSTALLER[@]}
+do
+	echo ""
+	$DIR/scripts/$i.sh $DIR
+	echo ""
+	read -p "Continue? [YyJj] " -n 1 -r
+	echo
+	if [[ $REPLY =~ ^[YyJj]$ ]]
+	then
+		continue
+	else
+		break
+	fi
+done
