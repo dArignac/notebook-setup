@@ -1,0 +1,13 @@
+{
+  "info": {
+    "name": "Fix comments"
+  }, 
+  "Func0": {
+    "fields": [
+      "comment"
+    ], 
+    "arguments": [], 
+    "module": "puddlestuff.functions", 
+    "func_name": "remove_fields"
+  }
+}

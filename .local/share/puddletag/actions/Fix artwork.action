@@ -1,0 +1,17 @@
+{
+  "info": {
+    "name": "Fix artwork"
+  }, 
+  "Func0": {
+    "fields": [
+      "just nothing to do with this"
+    ], 
+    "arguments": [
+      "cover.jpg", 
+      "", 
+      false
+    ], 
+    "module": "puddlestuff.functions", 
+    "func_name": "load_images"
+  }
+}

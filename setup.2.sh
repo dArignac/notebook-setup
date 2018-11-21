@@ -2,7 +2,7 @@
 DIRHERE=`pwd`
 
 echo "Install basic packages:"
-sudo aptitude install vim curl keepass2 encfs git htop multitail p7zip-rar clamav vlc poedit s3cmd libdvdread4 vobcopy libdvdcss2 imagemagick jpegoptim puddletag davfs2 gdebi digikam gsmartcontrol zsh fonts-powerline
+sudo aptitude install vim curl keepass2 encfs git htop multitail p7zip-rar clamav vlc poedit s3cmd libdvdread4 vobcopy libdvdcss2 imagemagick jpegoptim davfs2 gdebi digikam gsmartcontrol zsh fonts-powerline
 sudo update-alternatives --config editor
 
 # davfs2 group

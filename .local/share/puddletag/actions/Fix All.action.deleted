@@ -1,0 +1,45 @@
+{
+  "info": {
+    "name": "Fix All"
+  }, 
+  "Func2": {
+    "fields": [
+      "just nothing to do with this"
+    ], 
+    "arguments": [
+      "$num(%track%, 2) - %artist% - %title%"
+    ], 
+    "module": "puddlestuff.functions", 
+    "func_name": "move"
+  }, 
+  "Func1": {
+    "fields": [
+      "just nothing to do with this"
+    ], 
+    "arguments": [
+      "cover.jpg", 
+      "", 
+      false
+    ], 
+    "module": "puddlestuff.functions", 
+    "func_name": "load_images"
+  }, 
+  "Func0": {
+    "fields": [
+      "comment"
+    ], 
+    "arguments": [], 
+    "module": "puddlestuff.functions", 
+    "func_name": "remove_fields"
+  }, 
+  "Func3": {
+    "fields": [
+      "just nothing to do with this"
+    ], 
+    "arguments": [
+      "%year% - %album%"
+    ], 
+    "module": "puddlestuff.functions", 
+    "func_name": "tag_dir"
+  }
+}

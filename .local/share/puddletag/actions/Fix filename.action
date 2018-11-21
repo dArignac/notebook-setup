@@ -1,0 +1,15 @@
+{
+  "info": {
+    "name": "Fix filename"
+  }, 
+  "Func0": {
+    "fields": [
+      "just nothing to do with this"
+    ], 
+    "arguments": [
+      "$num(%track%, 2) - %artist% - %title%"
+    ], 
+    "module": "puddlestuff.functions", 
+    "func_name": "move"
+  }
+}
