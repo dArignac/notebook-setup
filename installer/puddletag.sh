@@ -1,5 +1,5 @@
 #!/bin/sh
-PATH_ROOT=$HOME/projects/github/debian-setup/
+PATH_ROOT=$HOME/projects/github/notebook-setup/
 PATH_CONFIG=".config/puddletag/puddletag.conf"
 PATH_ACTIONS=".local/share/puddletag/actions"
 PATH_CONFIG_TARGET="$HOME/$PATH_CONFIG"
