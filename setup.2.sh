@@ -119,7 +119,7 @@ chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "Installing rclone:"
-curl -L -o /tmp/rclone.zip https://downloads.rclone.org/rclone-v1.37-linux-amd64.zip
+curl -L -o /tmp/rclone.zip https://downloads.rclone.org/v1.45/rclone-v1.45-linux-amd64.zip
 cd /tmp
 unzip rclone.zip
 mv rclone-* $HOME/
