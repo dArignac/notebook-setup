@@ -3,9 +3,9 @@ DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null && pwd)"
 echo "Installing all packages:"
 
 declare -a INSTALLER=(
-#"initial"
-#"vim"
-#"terminator"
+"initial"
+"vim"
+"terminator"
 "git"
 "zsh"
 "encfs"
