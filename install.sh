@@ -10,14 +10,13 @@ declare -a INSTALLER=(
 "zsh"
 "insync"
 "python3"
-"shutter"
 "visualstudiocode"
 "asciidoc"
-"gnormalize"
 "borgbackup"
 "hidrive"
 "puddletag"
 "android_dev"
+"gnormalize"
 )
 
 for i in ${INSTALLER[@]}
