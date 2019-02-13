@@ -7,6 +7,8 @@ PATH_ACTIONS_TARGET="$HOME/$PATH_ACTIONS"
 
 echo "Installing puddletag..."
 sudo aptitude install puddletag
+mkdir -p $HOME/.config/puddletag
+mkdir -p $PATH_ACTIONS_TARGET
 
 echo "Linking config and actions..."
 [ -e $PATH_CONFIG_TARGET ] && mv $PATH_CONFIG_TARGET "$PATH_CONFIG_TARGET.bak"
