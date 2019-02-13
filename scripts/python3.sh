@@ -1,3 +1,5 @@
 #!/bin/bash
 echo "Installing Python:"
-curl https://bootstrap.pypa.io/get-pip.py | sudo -E python3
+sudo aptitude install python3-distutils
+curl https://bootstrap.pypa.io/get-pip.py -o /tmp/get-pip.py
+python3 /tmp/get-pip.py --user
