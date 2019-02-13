@@ -8,7 +8,6 @@ declare -a INSTALLER=(
 "terminator"
 "git"
 "zsh"
-"encfs"
 "insync"
 "python3"
 "shutter"
