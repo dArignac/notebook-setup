@@ -2,4 +2,4 @@
 echo "Installing asciidoctor"
 sudo aptitude install ruby graphviz
 sudo gem install asciidoctor asciidoctor-diagram
-pip3 install --user blockdiag
+$HOME/.local/bin/pip3 install --user blockdiag
