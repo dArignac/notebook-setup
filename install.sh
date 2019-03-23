@@ -10,6 +10,7 @@ declare -a INSTALLER=(
 "zsh"
 "insync"
 "python3"
+"node.js"
 "visualstudiocode"
 "asciidoc"
 "borgbackup"
