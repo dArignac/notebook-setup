@@ -11,6 +11,7 @@ declare -a INSTALLER=(
 "insync"
 "docker"
 "python3"
+"java"
 "node.js"
 "visualstudiocode"
 "asciidoc"
