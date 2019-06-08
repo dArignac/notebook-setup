@@ -9,6 +9,7 @@ declare -a INSTALLER=(
 "git"
 "zsh"
 "insync"
+"docker"
 "python3"
 "node.js"
 "visualstudiocode"
