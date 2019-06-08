@@ -22,7 +22,7 @@
     use_theme_colors = True
   [[bigger]]
     copy_on_selection = True
-    font = Monospace 14
+    font = Monospace 12
     foreground_color = "#e53c00"
     scrollback_infinite = True
     use_system_font = False
