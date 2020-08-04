@@ -16,7 +16,6 @@ declare -a INSTALLER=(
 "node.js"
 "visualstudiocode"
 "asciidoc"
-"borgbackup"
 "hidrive"
 "puddletag"
 "android_dev"
