@@ -17,7 +17,7 @@ declare -a INSTALLER=(
 "visualstudiocode"
 "asciidoc"
 "hidrive"
-"puddletag"
+"kid3"
 "android_dev"
 "gnormalize"
 )
