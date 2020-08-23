@@ -5,7 +5,7 @@ read -p "Understood and continue? [YyJj] " -n 1 -r
 echo
 if [[ $REPLY =~ ^[YyJj]$ ]]
 then
-  sudo aptitude install zsh
+  sudo apt install zsh
   cd $HOME
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
   git clone https://github.com/dArignac/fx.git .fx
