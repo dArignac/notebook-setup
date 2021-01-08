@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Installting nvm"
+echo "Installing nvm"
 mkdir -p $HOME/.nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | PROFILE=~/.zshrc bash
 
