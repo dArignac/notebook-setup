@@ -19,6 +19,7 @@ declare -a INSTALLER=(
 "android_dev"
 "gnormalize"
 "azure"
+"helm"
 )
 
 for i in ${INSTALLER[@]}
