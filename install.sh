@@ -11,15 +11,14 @@ declare -a INSTALLER=(
 "insync"
 "docker"
 "python3"
-"php"
 "java"
 "node.js"
 "visualstudiocode"
 "asciidoc"
-"hidrive"
 "kid3"
 "android_dev"
 "gnormalize"
+"azure"
 )
 
 for i in ${INSTALLER[@]}

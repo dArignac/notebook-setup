@@ -6,5 +6,3 @@ sudo adduser $USER kvm
 
 # flutter linux desktop requirements
 sudo aptitude install clang
-
-# FIXME add the android studio setup stuff
