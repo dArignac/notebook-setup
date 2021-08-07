@@ -4,22 +4,8 @@ echo "Installing all packages:"
 
 declare -a INSTALLER=(
 "initial"
-"vim"
-"terminator"
 "git"
 "zsh"
-"insync"
-"docker"
-"python3"
-"java"
-"node.js"
-"visualstudiocode"
-"asciidoc"
-"kid3"
-"android_dev"
-"gnormalize"
-"azure"
-"helm"
 )
 
 for i in ${INSTALLER[@]}

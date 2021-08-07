@@ -3,4 +3,6 @@ A collection of scripts for setting up a notebook with a fresh Ubuntu installati
 It's tailored to my needs and my machine.
 
 ## Running
-Run `./install.sh` and feel the magic...
+Run `./install.sh` and it installs the basic setup.
+
+Check the `scripts` folder for additional installers.
