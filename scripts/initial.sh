@@ -10,6 +10,3 @@ cp .config/terminator/config ~/.config/terminator/config
 # FIXME unclear xdotool digikam
 # FIXME necessary ? echo "some package has postfix as dependency, disabling autostart..."
 # sudo update-rc.d postfix disable
-
-# move scripts to root?
-# add keepass config
