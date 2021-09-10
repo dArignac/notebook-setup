@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=Bitwarden
+Exec=/home/alex/Bitwarden.AppImage
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+StartupNotify=true
