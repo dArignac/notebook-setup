@@ -3,8 +3,9 @@ echo "setting up git..."
 sudo apt install git
 git config --global user.name "Alexander Herrmann"
 git config --global credential.helper cache
-# cache 4 hours
-git config --global credential.helper 'cache --timeout=14400'
+git config --global pull.ff only
+# cache 24 hours
+git config --global credential.helper 'cache --timeout=86400'
 
 echo "adding git-lfs"
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
