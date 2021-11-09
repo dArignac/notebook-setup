@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Mattermost
+Comment=Mattermost Desktop application for Linux
+Exec="/home/alex/mattermost-desktop-5.0.1-linux-x64/mattermost-desktop"
+Terminal=false
+Type=Application
+Icon=/home/alex/mattermost-desktop-5.0.1-linux-x64/app_icon.png
+Categories=Network;InstantMessaging;
