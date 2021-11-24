@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=GoLand
+Comment=GoLand IDE
+Exec="/home/alex/goland/bin/goland.sh"
+Terminal=false
+Type=Application
+Icon=/home/alex/goland/bin/goland.png
