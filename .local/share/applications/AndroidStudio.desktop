@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Android Studio
+Comment=IntelliJ Idea
+Exec="/home/alex/android-studio/bin/studio.sh"
+Terminal=false
+Type=Application
+Icon=/home/alex/android-studio/bin/studio.png
