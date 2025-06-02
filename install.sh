@@ -6,6 +6,7 @@ declare -a INSTALLER=(
 "initial"
 "git"
 "zsh"
+"gnome"
 )
 
 for i in ${INSTALLER[@]}
